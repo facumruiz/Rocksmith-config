@@ -1,0 +1,208 @@
+0.000 [INFO]   - Wrapper DLL loaded (v0.7.1)
+0.000 [INFO]  PatchOriginalCode
+0.049 [INFO]  image crc32: 0xd1b38fcb
+0.533 [INFO]  Patching CoCreateInstance
+0.533 [INFO]  Patch_CallAbsoluteIndirectAddress - num locations: 2
+0.533 [INFO]  Patching call at 00C02DBD
+0.533 [INFO]  Patching call at 00E75278
+0.533 [INFO]  Patching PortAudio MarshalStreamComPointers
+0.533 [INFO]  Patch_CallRelativeAddress - num locations: 1
+0.533 [INFO]  Patching call at 00E7483F
+0.533 [INFO]  Patching PortAudio UnmarshalStreamComPointers
+0.533 [INFO]  Patch_CallRelativeAddress - num locations: 1
+0.533 [INFO]  Patching call at 00E748F4
+0.533 [INFO]  Patching Two Guitar Tones Connected Message Box (num locations: 1)
+0.533 [INFO]  Patching bytes at 007C0C5F
+0.536 [INFO]  Patched_CoCreateInstance called: IID_IMMDeviceEnumerator
+0.547 [INFO]  DebugDeviceEnum::GetDefaultAudioEndpoint - dataFlow: eRender - role: eMultimedia
+0.547 [INFO]  RSAggregatorDeviceEnum::UpdateAvailableDevices
+0.547 [INFO]  GetWineAsioInfo - Looking for "wineasio32.dll"...  Not found.
+0.550 [INFO]  GetWineAsioInfo - Looking for "wineasio.dll"...  Not found.
+0.553 [INFO]  AsioHelpers::FindDrivers
+0.554 [INFO]    Focusrite USB ASIO
+0.554 [INFO]  RSAsioDeviceEnum::UpdateAvailableDevices - output requesting ASIO driver: Focusrite USB ASIO
+0.554 [INFO]  Creating AsioSharedHost - dll: c:\program files\focusriteusb\focusriteusbasio32.dll
+0.578 [INFO]    ASIO input channels info:
+0.578 [INFO]      0 - active: 0, channel: 0, group: 0, isInput: 1, type: ASIOSTInt32LSB, name: Input 1
+0.578 [INFO]      1 - active: 0, channel: 1, group: 0, isInput: 1, type: ASIOSTInt32LSB, name: Input 2
+0.578 [INFO]    ASIO output channels info:
+0.578 [INFO]      0 - active: 0, channel: 0, group: 0, isInput: 0, type: ASIOSTInt32LSB, name: Output 1
+0.578 [INFO]      1 - active: 0, channel: 1, group: 0, isInput: 0, type: ASIOSTInt32LSB, name: Output 2
+0.578 [INFO]  RSAsioDeviceEnum::UpdateAvailableDevices - OK
+0.579 [INFO]  RSAsioDeviceEnum::UpdateAvailableDevices - input[0] requesting ASIO driver: Focusrite USB ASIO
+0.579 [INFO]  RSAsioDeviceEnum::UpdateAvailableDevices - OK
+0.579 [INFO]  DebugDeviceEnum::UpdateAvailableDevices - 1 render devices, 1 capture devices
+0.579 [INFO]    hr: S_OK
+0.579 [INFO]    *ppEndpoint: 0A44A8A0
+0.579 [INFO]  DebugDeviceEnum::GetDefaultAudioEndpoint - dataFlow: eCapture - role: eMultimedia
+0.579 [INFO]    hr: S_OK
+0.579 [INFO]    *ppEndpoint: 0A44A6C0
+0.579 [INFO]  DebugDeviceEnum::EnumAudioEndpoints - dataFlow: eAll - dwStateMask: 1
+0.579 [INFO]    hr: S_OK
+0.579 [INFO]    *ppDevices: 0A36B790
+0.579 [INFO]  {ASIO Out} DebugWrapperDevice::OpenPropertyStore - stgmAccess: 0
+0.579 [INFO]  {ASIO Out} DebugWrapperDevicePropertyStore::GetCount
+0.579 [INFO]    *cProps: 2
+0.579 [INFO]  {ASIO Out} DebugWrapperDevice::QueryInterface - riid: IID_IMMEndpoint
+0.579 [INFO]  {ASIO Out} DebugWrapperEndpoint::GetDataFlow
+0.579 [INFO]    *pDataFlow: eRender
+0.579 [INFO]  {ASIO Out} DebugWrapperDevice::Activate - Activate iid: IID_IAudioClient dwClsCtx: 1
+0.579 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::GetDevicePeriod
+0.579 [INFO]  {ASIO Out} RSAsioAudioClient::~RSAsioAudioClient
+0.579 [INFO]  {ASIO IN 0} DebugWrapperDevice::OpenPropertyStore - stgmAccess: 0
+0.579 [INFO]  {ASIO IN 0} DebugWrapperDevicePropertyStore::GetCount
+0.579 [INFO]    *cProps: 5
+0.579 [INFO]  {ASIO IN 0} DebugWrapperDevice::QueryInterface - riid: IID_IMMEndpoint
+0.579 [INFO]  {ASIO IN 0} DebugWrapperEndpoint::GetDataFlow
+0.579 [INFO]    *pDataFlow: eCapture
+0.579 [INFO]  {ASIO IN 0} DebugWrapperDevice::Activate - Activate iid: IID_IAudioClient dwClsCtx: 1
+0.579 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::GetDevicePeriod
+0.579 [INFO]  {ASIO IN 0} RSAsioAudioClient::~RSAsioAudioClient
+0.593 [INFO]  {ASIO Out} DebugWrapperDevice::Activate - Activate iid: IID_IAudioClient dwClsCtx: 17
+0.593 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::IsFormatSupported - ShareMode: Exclusive
+0.593 [INFO]    rejecting IEEE Float as it's incompatible with current ASIO sample type ASIOSTInt32LSB
+0.593 [INFO]    requested format is not supported
+0.593 [INFO]    hr: AUDCLNT_E_UNSUPPORTED_FORMAT
+0.593 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::IsFormatSupported - ShareMode: Exclusive
+0.593 [INFO]    rejecting IEEE Float as it's incompatible with current ASIO sample type ASIOSTInt32LSB
+0.593 [INFO]    requested format is not supported
+0.593 [INFO]    hr: AUDCLNT_E_UNSUPPORTED_FORMAT
+0.593 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::IsFormatSupported - ShareMode: Exclusive
+0.593 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::Initialize - ShareMode: Exclusive Flags: 40000 bufferDuration: 3ms periodicity: 3ms
+0.593 [INFO]  {ASIO Out} RSAsioAudioClient::Initialize - host requested buffer duration: 3ms (144 frames)
+0.594 [INFO]  {ASIO Out} WAVEFORMATEX
+  wFormatTag: fffe
+  nChannels: 2
+  nSamplesPerSec: 48000
+  nAvgBytesPerSec: 384000
+  nBlockAlign: 8
+  wBitsPerSample: 32
+  cbSize: 22
+  ext.SubFormat: KSDATAFORMAT_SUBTYPE_PCM
+  ext.Samples: 24
+  ext.dwChannelMask: 3
+0.594 [INFO]  {ASIO Out} RSAsioAudioClient::Initialize - actual buffer duration: 1ms (48 frames)
+0.594 [INFO]  AsioSharedHost::Setup - startCount: 0
+0.594 [INFO]    post output ready: 1
+0.594 [INFO]    ASIOBufferSize - min: 16 max: 1024 preferred: 48 granularity: 16
+0.594 [INFO]    Creating ASIO buffers (2 out, 2 in)...
+0.594 [INFO]  AsioSharedHost::AsioCalback_asioMessage - selector: 7 value: 0 | returning: 0
+0.594 [INFO]  AsioSharedHost::AsioCalback_asioMessage - selector: 2 value: 0 | returning: 1
+0.594 [INFO]  AsioSharedHost::AsioCalback_asioMessage - selector: 1 value: 3 | returning: 0
+0.594 [INFO]  AsioSharedHost::AsioCalback_asioMessage - selector: 1 value: 5 | returning: 0
+0.594 [INFO]  AsioSharedHost::AsioCalback_asioMessage - selector: 1 value: 4 | returning: 0
+0.594 [INFO]  AsioSharedHost::AsioCalback_asioMessage - selector: 1 value: 6 | returning: 0
+0.594 [INFO]  AsioSharedHost::AsioCalback_asioMessage - selector: 1 value: 15 | returning: 0
+0.594 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::GetBufferSize
+0.594 [INFO]    *pNumBufferFrames: 48
+0.594 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::GetStreamLatency
+0.594 [INFO]    latency: 2ms
+0.594 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::GetService - riid: IID_IAudioRenderClient
+0.594 [INFO]    returning render client
+0.594 [INFO]  DebugDeviceEnum::RegisterEndpointNotificationCallback
+0.597 [INFO]  Patched_PortAudio_MarshalStreamComPointers
+0.597 [INFO]  Patched_PortAudio_UnmarshalStreamComPointers
+0.597 [INFO]  {ASIO Out} DebugWrapperAudioClient3::QueryInterface riid: {F2D67F48-1977-4991-A3FC-A093835A7DC2}
+0.597 [INFO]  {ASIO Out} DebugWrapperAudioClient2<struct IAudioClient3>::QueryInterface riid: {F2D67F48-1977-4991-A3FC-A093835A7DC2}
+0.597 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::QueryInterface riid: {F2D67F48-1977-4991-A3FC-A093835A7DC2}
+0.597 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::SetEventHandle
+0.597 [INFO]  {ASIO Out} DebugWrapperRenderClient::GetBuffer NumFramesRequested: 48
+0.597 [INFO]  {ASIO Out} DebugWrapperRenderClient::ReleaseBuffer NumFramesWritten: 48
+0.597 [INFO]  {ASIO Out} RSAsioAudioClient::SwapBuffers
+0.597 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::Start
+0.597 [INFO]  AsioSharedHost::Start - enter startCount: 0
+0.597 [INFO]    Starting ASIO stream...
+0.602 [INFO]  AsioSharedHost::Start - leave startCount: 1
+0.613 [INFO]  Focusrite USB ASIO - AsioSharedHost::AsioCalback_bufferSwitch - buffer switch 1
+0.613 [INFO]  {ASIO Out} DebugWrapperRenderClient::GetBuffer NumFramesRequested: 48
+0.613 [INFO]  {ASIO Out} DebugWrapperRenderClient::ReleaseBuffer NumFramesWritten: 48
+0.613 [INFO]  {ASIO Out} RSAsioAudioClient::SwapBuffers
+0.614 [INFO]  Focusrite USB ASIO - AsioSharedHost::AsioCalback_bufferSwitch - buffer switch 2
+0.614 [INFO]  {ASIO Out} DebugWrapperRenderClient::GetBuffer NumFramesRequested: 48
+0.614 [INFO]  {ASIO Out} DebugWrapperRenderClient::ReleaseBuffer NumFramesWritten: 48
+0.614 [INFO]  {ASIO Out} RSAsioAudioClient::SwapBuffers
+0.615 [INFO]  Focusrite USB ASIO - AsioSharedHost::AsioCalback_bufferSwitch - buffer switch 3 (not logging upcoming switches)
+2.512 [INFO]  {ASIO Out} xrun
+2.521 [INFO]  {ASIO Out} xrun
+2.592 [INFO]  {ASIO Out} xrun
+2.601 [INFO]  {ASIO Out} xrun
+2.603 [INFO]  {ASIO Out} recovered from 2 consecutive xruns. Ignoring for some time.
+26.988 [INFO]  {ASIO IN 0} DebugWrapperDevice::Activate - Activate iid: IID_IAudioClient dwClsCtx: 17
+26.988 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::IsFormatSupported - ShareMode: Exclusive
+26.988 [INFO]    rejecting IEEE Float as it's incompatible with current ASIO sample type ASIOSTInt32LSB
+26.988 [INFO]    requested format is not supported
+26.988 [INFO]    hr: AUDCLNT_E_UNSUPPORTED_FORMAT
+26.988 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::IsFormatSupported - ShareMode: Exclusive
+26.988 [INFO]    rejecting IEEE Float as it's incompatible with current ASIO sample type ASIOSTInt32LSB
+26.988 [INFO]    requested format is not supported
+26.988 [INFO]    hr: AUDCLNT_E_UNSUPPORTED_FORMAT
+26.988 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::IsFormatSupported - ShareMode: Exclusive
+26.988 [INFO]    rejecting IEEE Float as it's incompatible with current ASIO sample type ASIOSTInt32LSB
+26.988 [INFO]    requested format is not supported
+26.988 [INFO]    hr: AUDCLNT_E_UNSUPPORTED_FORMAT
+26.988 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::IsFormatSupported - ShareMode: Exclusive
+26.988 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::Initialize - ShareMode: Exclusive Flags: 40000 bufferDuration: 3ms periodicity: 3ms
+26.988 [INFO]  {ASIO IN 0} RSAsioAudioClient::Initialize - host requested buffer duration: 3ms (144 frames)
+26.988 [INFO]  {ASIO IN 0} WAVEFORMATEX
+  wFormatTag: fffe
+  nChannels: 2
+  nSamplesPerSec: 48000
+  nAvgBytesPerSec: 384000
+  nBlockAlign: 8
+  wBitsPerSample: 32
+  cbSize: 22
+  ext.SubFormat: KSDATAFORMAT_SUBTYPE_PCM
+  ext.Samples: 24
+  ext.dwChannelMask: 3
+26.988 [INFO]  {ASIO IN 0} RSAsioAudioClient::Initialize - actual buffer duration: 1ms (48 frames)
+26.988 [INFO]  AsioSharedHost::Setup - startCount: 1
+26.988 [INFO]  {ASIO IN 0} DebugWrapperDevice::Activate - Activate iid: IID_IAudioEndpointVolume dwClsCtx: 1
+26.988 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::GetBufferSize
+26.988 [INFO]    *pNumBufferFrames: 48
+26.988 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::GetStreamLatency
+26.988 [INFO]    latency: 2ms
+26.988 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::GetService - riid: IID_IAudioCaptureClient
+26.988 [INFO]    returning capture client
+26.988 [INFO]  Patched_PortAudio_MarshalStreamComPointers
+26.989 [INFO]  Patched_PortAudio_UnmarshalStreamComPointers
+26.989 [INFO]  {ASIO IN 0} DebugWrapperAudioClient3::QueryInterface riid: {F2D67F48-1977-4991-A3FC-A093835A7DC2}
+26.989 [INFO]  {ASIO IN 0} DebugWrapperAudioClient2<struct IAudioClient3>::QueryInterface riid: {F2D67F48-1977-4991-A3FC-A093835A7DC2}
+26.989 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::QueryInterface riid: {F2D67F48-1977-4991-A3FC-A093835A7DC2}
+26.989 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::SetEventHandle
+26.989 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::Start
+26.989 [INFO]  AsioSharedHost::Start - enter startCount: 1
+26.989 [INFO]  AsioSharedHost::Start - leave startCount: 2
+26.989 [INFO]  {ASIO IN 0} DebugWrapperCaptureClient::GetBuffer
+26.989 [INFO]  {ASIO IN 0} RSAsioAudioClient::SwapBuffers
+26.989 [INFO]  {ASIO IN 0} DebugWrapperCaptureClient::ReleaseBuffer NumFramesRead: 48
+26.990 [INFO]  {ASIO IN 0} DebugWrapperAudioEndpointVolume::SetMasterVolumeLevelScalar fLevel: 0.17
+26.990 [INFO]  {ASIO IN 0} DebugWrapperCaptureClient::GetBuffer
+26.990 [INFO]  {ASIO IN 0} RSAsioAudioClient::SwapBuffers
+26.990 [INFO]  {ASIO IN 0} DebugWrapperCaptureClient::ReleaseBuffer NumFramesRead: 48
+26.991 [INFO]  {ASIO IN 0} DebugWrapperCaptureClient::GetBuffer
+26.991 [INFO]  {ASIO IN 0} DebugWrapperCaptureClient::ReleaseBuffer NumFramesRead: 48
+100.212 [INFO]  {ASIO IN 0} DebugWrapperAudioEndpointVolume::SetMasterVolumeLevelScalar fLevel: 0.798913
+732.707 [INFO]  {ASIO Out} xrun
+738.863 [INFO]  {ASIO Out} xrun
+833.757 [INFO]  {ASIO Out} xrun
+953.740 [INFO]  {ASIO Out} xrun
+997.786 [INFO]  {ASIO IN 0} xrun
+1106.130 [INFO]  {ASIO IN 0} xrun
+1491.278 [INFO]  {ASIO Out} xrun
+1499.269 [INFO]  {ASIO Out} xrun
+1499.272 [INFO]  {ASIO IN 0} xrun
+1521.091 [INFO]  {ASIO IN 0} xrun
+1604.409 [INFO]  {ASIO Out} xrun
+1619.618 [INFO]  {ASIO Out} xrun
+1899.900 [INFO]  {ASIO Out} xrun
+1948.467 [INFO]  {ASIO Out} xrun
+2065.046 [INFO]  {ASIO IN 0} DebugWrapperAudioClient<struct IAudioClient3>::Stop
+2065.046 [INFO]  AsioSharedHost::Stop - enter startCount: 2
+2065.046 [INFO]  AsioSharedHost::Stop - leave startCount: 1
+2065.046 [INFO]  DebugDeviceEnum::UnregisterEndpointNotificationCallback
+2065.049 [INFO]  {ASIO Out} DebugWrapperAudioClient<struct IAudioClient3>::Stop
+2065.049 [INFO]  AsioSharedHost::Stop - enter startCount: 1
+2065.049 [INFO]  AsioSharedHost::Stop - stopping ASIO stream
+2065.055 [INFO]  AsioSharedHost::Stop - leave startCount: 0
+2065.055 [INFO]  {ASIO Out} RSAsioAudioClient::~RSAsioAudioClient
+2065.485 [INFO]   - Wrapper DLL unloaded
